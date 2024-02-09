@@ -1,0 +1,538 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>zxsrxt repository</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="https://zxsrxt.github.io">
+    <meta property="og:type" content="website">
+    <meta charset="utf-8">
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        dl,
+        dt,
+        dd,
+        ol,
+        nav ul,
+        nav li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        @keyframes rainbow {
+        0% {color: red;}
+        14% {color: orange;}
+        28% {color: yellow;}
+        42% {color: green;}
+        57% {color: blue;}
+        71% {color: indigo;}
+        85% {color: violet;}
+        100% {color: red;}
+        }
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        /*--start editing from here--*/
+
+        a {
+            text-decoration: none;
+        }
+
+        .txt-rt {
+            text-align: right;
+        }
+
+        /* text align right */
+
+        .txt-lt {
+            text-align: left;
+        }
+
+        /* text align left */
+
+        .txt-center {
+            text-align: center;
+        }
+
+        /* text align center */
+
+        .float-rt {
+            float: right;
+        }
+
+        /* float right */
+
+        .float-lt {
+            float: left;
+        }
+
+        /* float left */
+
+        .pos-relative {
+            position: relative;
+        }
+
+        /* Position Relative */
+
+        .pos-absolute {
+            position: absolute;
+        }
+
+        /* Position Absolute */
+
+        .vertical-base {
+            vertical-align: baseline;
+        }
+
+        /* vertical align baseline */
+
+        .vertical-top {
+            vertical-align: top;
+        }
+
+        /* vertical align top */
+
+        nav.vertical ul li {
+            display: block;
+        }
+
+        /* vertical menu */
+
+        nav.horizontal ul li {
+            display: inline-block;
+        }
+
+        /* horizontal menu */
+
+        img {
+            max-width: 100%;
+        }
+
+        /*--end reset--*/
+
+        body {
+            font-family: 'Catamaran', sans-serif;
+            font-size: 100%;
+            /*background: linear-gradient(to left top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
+            background: linear-gradient(135deg, #054b8a, #81356c, #bd3a4c, #e64c1a);
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -ms-background-size: cover;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .h5gg-repo {
+            display: -webkit-flex;
+            display: -webkit-box;
+            display: -moz-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            font-weight: 300;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            letter-spacing: 2px;
+            margin: 1.2em 1vw;
+            text-align: center;
+            font-family: 'Catamaran', sans-serif;
+        }
+
+        .h5gg-repo .content {
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 0 5vw;
+            padding: 3.5vw;
+            border-width: 5px 0;
+            box-sizing: border-box;
+            display: flex;
+            display: -webkit-flex;
+            flex-wrap: wrap;
+            background: rgba(252, 254, 255, 0.11);
+        }
+
+        .repo-url {
+            flex-basis: 100%;
+            -webkit-flex-basis: 100%;
+            margin-bottom: 1.5em;
+        }
+        
+        .repo-url input {
+            border-radius: 5px;
+        }
+
+        .h5gg-repo input[type="text"] {
+            width: 100%;
+            color: #fff;
+            outline: none;
+            background: rgba(0, 0, 0, 0.32);
+            font-size: 17px;
+            letter-spacing: 0.5px;
+            /* line-height: 25px; */
+            padding: 12px;
+            box-sizing: border-box;
+            border: none;
+            /* border-bottom: 1px solid #929191; */
+            -webkit-appearance: none;
+            font-family: 'Catamaran', sans-serif;
+            /* background: transparent; */
+        }
+
+        .h5gg-repo ::-webkit-input-placeholder {
+            color: #eee;
+        }
+
+        .h5gg-repo :-moz-placeholder {
+            /* Firefox 18- */
+            color: #eee;
+        }
+
+        .h5gg-repo ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #eee;
+        }
+
+        .h5gg-repo :-ms-input-placeholder {
+            color: #eee;
+        }
+
+        .check1 {
+            text-align: left;
+        }
+
+        label.check {
+            color: #ededed;
+            letter-spacing: 1px;
+            font-size: 15px;
+            display: inline-block;
+        }
+
+        .agile_label {
+            text-align: left;
+            margin: 10px 0 0;
+        }
+
+        .h5gg-repo.w3l-sub {
+            margin-top: 1em;
+            flex-basis: 100%;
+            -webkit-flex-basis: 100%;
+        }
+
+        .h5gg-repo a {
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: block;
+            color: #ffffff;
+            font-weight: 100;
+            width: 100%;
+            padding: 0.4em 0;
+            font-size: 1em;
+            font-weight: 400;
+            letter-spacing: 2px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: #000;
+            font-family: 'Catamaran', sans-serif;
+            transition: 0.5s all ease;
+            -webkit-transition: 0.5s all ease;
+            -moz-transition: 0.5s all ease;
+            -o-transition: 0.5s all ease;
+            -ms-transition: 0.5s all ease;
+        }
+
+        .h5gg-repo a:hover {
+            color: #fff;
+            box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
+            /*transform: translateY(5px);*/
+        }
+
+        .repo-add {
+            margin-top: 1em;
+            width: 100%;
+        }
+
+        .repo-add .icon {
+            display: inline-block;
+            width: 20%;
+            float: left;
+        }
+
+        .repo-add .item-text {
+            display: inline-block;
+            width: 80%;
+            line-height: 30px;
+        }
+
+        .repo-add img {
+            margin-top: 0 !important;
+            display: block;
+            margin: 0 auto;
+            width: 30px;
+            height: 30px;
+        }
+
+
+        /*--copyright--*/
+
+        .copy-text {
+            margin: 4em 0 2em;
+        }
+
+        .copy-text p {
+            color: #fff;
+            font-size: 14.5px;
+            letter-spacing: 1.5px;
+            line-height: 1.8;
+            margin: 0 3vw;
+        }
+        .banner {
+            font-size: 32px;
+            animation: rainbow 5s infinite;
+        }
+        .copy-text p a {
+            color: #fff;
+            transition: 0.5s all ease;
+            -webkit-transition: 0.5s all ease;
+            -moz-transition: 0.5s all ease;
+            -o-transition: 0.5s all ease;
+            -ms-transition: 0.5s all ease;
+        }
+
+        .copy-text p a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        /*--//copyright--*/
+
+        /*--responsive--*/
+        @media(max-width:1024px) {
+            h1 {
+                font-size: 4.5vw;
+            }
+        }
+
+        @media(max-width:800px) {
+            h1 {
+                font-size: 5vw;
+            }
+        }
+
+        @media(max-width:480px) {
+            h1 {
+                font-size: 2.3em;
+            }
+
+            .h5gg-repo .content {
+                padding: 7.5vw;
+            }
+        }
+
+        @media(max-width:568px) {
+            .h5gg-repo {
+                flex-direction: column;
+            }
+
+            .h5gg-repo img {
+                order: 1;
+                margin-top: 1em;
+            }
+        }
+
+        @media(max-width:440px) {
+            h1 {
+                font-size: 2.1em;
+            }
+
+            .parent {
+                display: block;
+            }
+        }
+
+        @media(max-width:320px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .h5gg-repo .content {
+                padding: 25px 8px;
+            }
+        }
+
+        /*--//responsive--*/
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+</head>
+
+<body>
+    <h1 class="banner">Repository by zxsrxt</h1>
+    <div class="h5gg-repo box">
+
+        <div class="content">
+            <div class="repo-url">
+                <input type="text" disabled value="https://zxsrxt.github.io" />
+            </div>
+            <div class="repo-add">
+                <a href="sileo://source/https://zxsrxt.github.io">
+                    <div class="icon">
+                        <img src="icon/sileo.png">
+                    </div>
+                    <div class="item-text">
+                        Add to Sileo
+                    </div>
+                </a>
+
+                <a href="zbra://sources/add/https://zxsrxt.github.io">
+                    <div class="icon">
+                        <img src="icon/zebra.svg">
+                    </div>
+                    <div class="item-text">
+                        Add to Zebra
+                    </div>
+                </a>
+                
+            Supports Roothide and Roothide Bootstrap
+            </div>
+        </div>
+    </div>
+    <div class="copy-text">
+        <p>Copyright &copy; 2023. zxsrxt All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>

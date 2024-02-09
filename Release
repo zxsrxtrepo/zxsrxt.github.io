@@ -1,0 +1,8 @@
+Origin: zxsrxt
+Label: zxsrxt
+Suite: stable
+Version: 2.0
+Codename: ios
+Architectures: iphoneos-arm64e
+Components: main
+Description: zxsrxt
